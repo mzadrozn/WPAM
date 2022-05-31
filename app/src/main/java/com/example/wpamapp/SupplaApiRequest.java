@@ -1,5 +1,7 @@
 package com.example.wpamapp;
 
+import org.json.JSONArray;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -39,6 +41,9 @@ public class SupplaApiRequest implements Callable<String> {
             con.disconnect();
 
             String json_data = content.toString();
+            JSONArray arr = new JSONArray(json_data);
+            Integer lastTimestamp = arr.getJSONObject(arr.length() -1).getInt("date_timestamp");
+            Integer from = (int)(from_time / 1000);
             return json_data;
             //final JSONArray arr = new JSONArray(json_data);
         } catch (Exception e) {

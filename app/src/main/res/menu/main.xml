@@ -5,13 +5,4 @@
         android:id="@+id/viewGithub"
         android:title="@string/viewGithub">
     </item>
-    <item
-        android:id="@+id/report"
-        android:title="@string/reportProblem">
-    </item>
-    <item
-        android:id="@+id/website"
-        android:title="@string/viewWebsite">
-    </item>
-
 </menu>

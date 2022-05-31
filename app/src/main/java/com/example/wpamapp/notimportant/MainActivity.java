@@ -84,19 +84,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         switch (item.getItemId()) {
             case R.id.viewGithub:
                 i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://github.com/PhilJay/MPAndroidChart"));
-                startActivity(i);
-                break;
-            case R.id.report:
-                i = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto", "philjay.librarysup@gmail.com", null));
-                i.putExtra(Intent.EXTRA_SUBJECT, "MPAndroidChart Issue");
-                i.putExtra(Intent.EXTRA_TEXT, "Your error report here...");
-                startActivity(Intent.createChooser(i, "Report Problem"));
-                break;
-            case R.id.website:
-                i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://at.linkedin.com/in/philippjahoda"));
+                i.setData(Uri.parse("https://github.com/mzadrozn/WPAM"));
                 startActivity(i);
                 break;
         }

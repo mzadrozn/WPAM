@@ -25,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         ePassword = findViewById(R.id.editTextPassword);
         bLogin = findViewById(R.id.buttonLogin);
 
+        setTitle("");
+
         Intent i = new Intent(this, MainActivity.class);
 
         bLogin.setOnClickListener(new View.OnClickListener() {

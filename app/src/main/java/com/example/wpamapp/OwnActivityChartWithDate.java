@@ -66,7 +66,7 @@ public class OwnActivityChartWithDate extends DemoBase implements
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_line_chart);
 
-        setTitle("Wykres generowanej energii");
+        setTitle("Generated energy");
 
         etDateFrom = findViewById(R.id.etDateFrom);
         etDateTo = findViewById(R.id.etDateTo);
@@ -300,7 +300,7 @@ public class OwnActivityChartWithDate extends DemoBase implements
         switch (item.getItemId()) {
             case R.id.viewGithub: {
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://github.com/PhilJay/MPAndroidChart/blob/master/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivity1.java"));
+                i.setData(Uri.parse("https://github.com/mzadrozn/WPAM"));
                 startActivity(i);
                 break;
             }
